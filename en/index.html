@@ -13,16 +13,29 @@
 
     <link rel="shortcut icon" href="/favicon.png">
 
+    <script>
+      paceOptions = {
+        ajax: true,
+        document: true,
+        eventLag: true,
+        elements: {
+          selectors: ['img']
+        }
+      };
+    </script>
     <script src="//cdnjs.cloudflare.com/ajax/libs/pace/0.5.5/pace.min.js"></script>
     <script>
       Pace.on('done', function(){
         setTimeout(function() {
-          $('.preloader').fadeOut();
-        }, 300);
+          $('.preloader').addClass('fadeOutUpBig animated').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function(){
+            $(this).removeClass().addClass('.preloader');
+          });
+        }, 700);
       });
     </script>
 
-    <link href="//cdnjs.cloudflare.com/ajax/libs/animate.css/3.1.1/animate.min.css" rel="stylesheet">
+    <link href="//cdn.jsdelivr.net/animatecss/3.2.0/animate.min.css" rel="stylesheet">
+    <link href="//cdn.jsdelivr.net/fontawesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
     <link href="/assets/css/styles.css" rel="stylesheet">
 
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
@@ -32,33 +45,37 @@
     <![endif]-->
   </head>
 
-  <body class="ms ms_index">
+  <body class="en en_index lang_en">
 
     <!-- Preloader -->
     <div class="preloader"></div>
     <!-- Background Pattern -->
-    <div class="bg-pattern bg-pattern_vertical"></div>
+    <div class="bg-pattern bg-pattern-diag"></div>
     <!-- Backstretch Carousel -->
     <div class="backstretch-carousel"></div>
 
     <div class="small-logo">
-      <a href="#top" class="gototop"><img alt="logo" src="/assets/img/mhp/logo_white_small.png"></a>
+      <a href="#top" class="logo gototop"><img alt="logo" src="/assets/img/mhp/logo_white_small.png"></a>
+      <nav>
+        <a href="/" class="lang_ms"><i class="fa fa-flag"></i> Malay</a>
+        <a href="/en" class="lang_en"><i class="fa fa-flag"></i> English</a>
+      </nav>
     </div>
 
     <!-- ******************** MASTHEAD SECTION ******************** -->
     <main class="masthead screen" id="top" role="main">
       <div class="container">
 
-        <div class="logo">
+        <div class="masthead-logo">
           <a href="#"><img alt="logo" src="/assets/img/mhp/logo_white.png"></a>
         </div>
 
         <h1>
-          Allah <strong>Maha Besar.</strong><br>Muhammad <strong>Petunjuk Kami.</strong>
+          Allah is <strong>The Greatest.</strong><br>Muhammad is <strong>Our Guide.</strong>
         </h1>
 
         <a class="scrollto" href="#explore">
-          <p>Skrol Ke Bawah</p>
+          <p>Scroll Down To Explore</p>
           <p class="scrollto--arrow"><img alt="scroll down arrow" src="/assets/img/scroll_down.png">
         </p></a>
 
@@ -71,16 +88,19 @@
     <main class="hero screen" id="explore">
       <div class="container">
         <div class="section-title">
-          <h2>Kemahiran Kami.</h2>
-          <h4>Inilah kembara kami dalam dunia muzik Islam.</h4>
+          <i class="fa fa-send wow fadeInDownBig showdelay2"></i>
+          <h2 class="wow flipInX showdelay3">Our Passion.</h2>
+          <h4 class="wow fadeInDown showdelay4">This is our adventure through the world of Islamic music.</h4>
         </div>
       </div>
     </main>
 
+    <!-- ******************** MASTERPIECE SECTION ******************** -->
     <main class="masterpiece screen">
       <div class="container">
-        <div class="wow bounceInLeft" data-wow-delay="0.5s">
-          <h2>Kita cuma penyampai sahaja.<br>Karya kita milik <strong>Dia.</strong></h2>
+        <div class="section-title">
+          <!-- <i class="fa fa-microphone wow bounceInLeft showdelay3"></i> -->
+          <h1 class="wow bounceInLeft showdelay5">We are merely a messenger.<br>Our masterpieces are ultimately <strong>His.</strong></h1>
         </div>
       </div>
       <!--/container -->
@@ -91,60 +111,60 @@
     <main class="team screen" id="team">
       <div class="container">
         <div class="section-title">
-          <h2>Keluarga Kami.</h2>
-          <h4>Kami bukan sekadar sebuah syarikat produksi. Kami adalah sebuah keluarga.</h4>
+          <h2 class="wow bounceInLeft showdelay3">Our Family.</h2>
+          <h4 class="wow bounceInRight showdelay5">We are not just a production company. We are a family.</h4>
         </div>
 
-        <section class="row team">
+        <section class="row">
           <div class="col-sm-6 col-md-3">
-            <div class="thumbnail wow fadeInDown" data-wow-delay="0.3s">
-              <img alt="analytics-icon" src="/assets/img/service_01.png">
+            <div class="teamblock wow fadeInLeft showdelay4">
+              <img alt="analytics-icon" src="/assets/img/mhp/bio_munif.png">
 
               <div class="caption">
                 <h3>Munif Ahmad</h3>
-                <p>Pengarah Urusan</p>
+                <p>Managing Director</p>
               </div>
             </div>
-            <!--/thumbnail -->
+            <!--/teamblock -->
           </div>
           <!--/col-sm-6-->
 
           <div class="col-sm-6 col-md-3">
-            <div class="thumbnail wow fadeInDown" data-wow-delay="0.6s">
-              <img alt="analytics-icon" src="/assets/img/service_02.png">
+            <div class="teamblock wow fadeInUp showdelay5">
+              <img alt="analytics-icon" src="/assets/img/mhp/bio_amir.png">
 
               <div class="caption">
                 <h3>Amir Arshad</h3>
-                <p>Eksekutif <em>Artists &amp; Repertoire</em></p>
+                <p>Artists &amp; Repertoire Executive</p>
               </div>
             </div>
-            <!--/thumbnail -->
+            <!--/teamblock -->
           </div>
           <!--/col-sm-6-->
 
           <div class="col-sm-6 col-md-3">
-            <div class="thumbnail wow fadeInDown" data-wow-delay="0.9s">
-              <img alt="analytics-icon" src="/assets/img/service_03.png">
+            <div class="teamblock wow fadeInUp showdelay5">
+              <img alt="analytics-icon" src="/assets/img/mhp/bio_wan.png">
 
               <div class="caption">
                 <h3>Wan Saleh</h3>
-                <p>Pengarah Studio, Komposer/Jurutera Bunyi Residen</p>
+                <p>Studio Director, Resident Composer/Sound Engineer</p>
               </div>
             </div>
-            <!--/thumbnail -->
+            <!--/teamblock -->
           </div>
           <!--/col-sm-6-->
 
           <div class="col-sm-6 col-md-3">
-            <div class="thumbnail wow fadeInDown" data-wow-delay="1.2s">
-              <img alt="analytics-icon" src="/assets/img/service_04.png">
+            <div class="teamblock wow fadeInRight showdelay4">
+              <img alt="analytics-icon" src="/assets/img/mhp/bio_taq.png">
 
               <div class="caption">
                 <h3>Nurtaqwa Othman</h3>
-                <p>Pereka Grafik &amp; Fotografer</p>
+                <p>Graphic Designer &amp; Photographer</p>
               </div>
             </div>
-            <!--/thumbnail -->
+            <!--/teamblock -->
           </div>
           <!--/col-sm-6-->
         </section>
@@ -154,56 +174,11 @@
     </main>
     <!--/main -->
 
-    <!-- ******************** TESTIMONIALS SECTION ******************** -->
-    <div class="highlight testimonials hidden">
-      <div class="container">
-        <div class="section-title">
-          <h2>What our customers said</h2>
-
-          <h4>Don't take our word. See their testimonials.</h4>
-        </div>
-
-        <section class="row breath">
-          <div class="col-md-6">
-            <div class="testblock wow fadeInLeft" data-wow-delay="0.3s">
-              Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
-            </div>
-
-            <div class="clientblock wow fadeInRight" data-wow-delay="0.8s">
-              <img alt="." src="/assets/img/customer-img-1.jpg">
-
-              <p><strong>Erwan Taib</strong><br>
-              Artiste and Founder of Madrasah Mahabbah</p>
-            </div>
-          </div>
-          <!--/col-md-6 -->
-
-          <div class="col-md-6">
-            <div class="testblock wow fadeInLeft" data-wow-delay="0.3s">
-              Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
-            </div>
-
-            <div class="clientblock wow fadeInRight" data-wow-delay="0.8s">
-              <img alt="." src="/assets/img/customer-img-2.jpg">
-
-              <p><strong>Adib Nahar</strong><br>
-              Artiste and Founder of Madrasah Mahabbah</p>
-            </div>
-          </div>
-          <!--/col-md-6 -->
-        </section>
-        <!--/section -->
-      </div>
-      <!--/container -->
-    </div>
-    <!--/highlight Testimonials -->
-
-
     <!-- ******************** FOOTER ******************** -->
     <div class="container">
       <section class="row breath">
         <div class="col-md-12 footerlinks">
-          <p>&copy; 2014 MH Pro. Semua Hakcipta Terpelihara.</p>
+          <h3>&copy; 2014 MH Pro. All Rights Reserved.</h3>
         </div>
       </section>
       <!--/section -->
