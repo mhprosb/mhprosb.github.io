@@ -28,7 +28,7 @@
       Pace.on('done', function(){
         setTimeout(function() {
           $('.preloader').addClass('fadeOutUpBig animated').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function(){
-            $(this).removeClass().addClass('.preloader');
+            $(this).removeClass().addClass('.preloader').hide();
           });
         }, 700);
       });
@@ -66,13 +66,16 @@
     <main class="masthead screen" id="top" role="main" data-scroll-index="0">
       <div class="container">
 
+        <!-- <h2 class="salam">Assalamualaikum Warahmatullah.</h2> -->
+        <div class="salam">
+          <img src="/assets/img/mhp/salam_white.png" alt="">
+        </div>
+
         <div class="masthead-logo">
           <a href="#"><img alt="logo" src="/assets/img/mhp/logo_white.png"></a>
         </div>
 
-        <h1>
-          Allah is <strong>The Greatest.</strong><br>Muhammad is <strong>Our Guide.</strong>
-        </h1>
+        <h1>Allah is <strong>The Greatest.</strong><br>Muhammad is <strong>Our Guide.</strong></h1>
 
         <a class="scrollto" href="#explore">
           <p>Scroll Down To Explore</p>
@@ -123,7 +126,7 @@
     <main class="team screen" id="team" data-scroll-index="3">
       <div class="container">
         <div class="section-title">
-          <i class="fa fa-cubes wow fadeInDown showdelay2"></i>
+          <i class="fa fa-cogs wow fadeInDown showdelay2"></i>
           <h2 class="wow bounceInLeft showdelay3">Our Family.</h2>
           <h4 class="wow bounceInRight showdelay5">We are not just a production company. We are a family.</h4>
         </div>
