@@ -14,14 +14,7 @@
     <link rel="shortcut icon" href="/favicon.png">
 
     <script>
-      paceOptions = {
-        ajax: true,
-        document: true,
-        eventLag: true,
-        elements: {
-          selectors: ['img']
-        }
-      };
+      paceOptions = { elements: { selectors: ['img', 'video'] } };
     </script>
     <script src="//cdnjs.cloudflare.com/ajax/libs/pace/0.5.5/pace.min.js"></script>
     <script>
@@ -53,7 +46,10 @@
     <div class="bg-pattern bg-pattern-vertical"></div>
     <!-- Backstretch Carousel -->
     <div class="backstretch-carousel"></div>
+    <!-- Video BG -->
+    <div class="back-vide" data-vide-bg="/assets/img/mhp/video"></div>
 
+    <!-- ******************** SMALL TOPNAV ******************** -->
     <header class="small-logo" role="header">
       <a href="#top" class="logo gototop"><img alt="logo" src="/assets/img/mhp/logo_white_small.png"></a>
       <nav>
@@ -83,20 +79,19 @@
         </p></a>
 
       </div>
-      <!--/container -->
     </main>
-    <!--/main -->
 
     <!-- ******************** HERO SECTION ******************** -->
     <main class="hero screen" id="explore" data-scroll-index="1">
       <div class="container">
         <div class="section-title">
-          <i class="fa fa-send wow fadeInDown showdelay2"></i>
-          <h2 class="wow flipInX showdelay3">Kembara Nasyid.</h2>
-          <h4 class="wow fadeInDown showdelay4">Inilah semangat kami dalam dunia muzik Islam.<br>Kami mencintai dan berjuang menyebar dakwah melalui muzik.<br>Kami cintai Zikrullah. Kami rindui Selawat.</h4>
+          <!-- <i class="fa fa-send wow fadeInDown" data-wow-delay="0.2s"></i> -->
+
+          <h2 class="wow flipInX" data-wow-delay="0.3s">Kembara Nasyid.</h2>
+          <h4 class="wow fadeInDown" data-wow-delay="0.4s">Inilah semangat kami dalam dunia muzik Islam.<br>Kami mencintai dan berjuang menyebar dakwah melalui muzik.<br>Kami cintai Zikrullah. Kami rindui Selawat.</h4>
         </div>
 
-        <p class="lyrics wow fadeInRight showdelay5">
+        <p class="lyrics wow fadeInRight" data-wow-delay="0.5s">
           Dalam diri selembut sutera<br>
           Kau miliki <strong>iman yang teguh</strong><br>
           Kau nyalakan obor agama dirimu bak lentera<br>
@@ -104,7 +99,7 @@
           Walau pun jasadmu milik tuan<br>
           Tetapi <strong>hatimu milik Tuhan</strong>
         </p>
-        <p class="cite wow flipInX showdelay9">
+        <p class="cite wow flipInX" data-wow-delay="0.8s">
           Munif Ahmad &amp; ITO Lara, &lsquo;04
         </p>
       </div>
@@ -114,26 +109,25 @@
     <main class="masterpiece screen" data-scroll-index="2">
       <div class="container">
         <div class="section-title">
-          <i class="fa fa-quote-left wow fadeInLeft showdelay6"></i>
-          <h1 class="wow bounceInLeft showdelay3">Kita cuma penyampai sahaja.<br>Karya kita milik <strong>Dia.</strong></h1>
+          <i class="fa fa-quote-left wow fadeInLeft" data-wow-delay="0.6s"></i>
+          <h1 class="wow bounceInLeft" data-wow-delay="0.3s">Kita cuma penyampai sahaja.<br>Karya kita milik <strong>Dia.</strong></h1>
         </div>
       </div>
-      <!--/container -->
     </main>
-    <!--/main -->
 
     <!-- ******************** TEAM SECTION ******************** -->
     <main class="team screen" id="team" data-scroll-index="3">
       <div class="container">
         <div class="section-title">
-          <i class="fa fa-cogs wow fadeInDown showdelay2"></i>
-          <h2 class="wow bounceInLeft showdelay3">Keluarga Kami.</h2>
-          <h4 class="wow bounceInRight showdelay5">Kami bukan sekadar sebuah syarikat produksi. Kami adalah sebuah keluarga.</h4>
+          <!-- <i class="fa fa-cogs wow fadeInDown" data-wow-delay="0.2s"></i> -->
+
+          <h2 class="wow bounceInLeft" data-wow-delay="0.3s">Keluarga Kami.</h2>
+          <h4 class="wow bounceInRight" data-wow-delay="0.5s">Kami bukan sekadar sebuah syarikat produksi. Kami adalah sebuah keluarga.</h4>
         </div>
 
         <section class="row">
           <div class="col-sm-6 col-md-3">
-            <div class="teamblock wow fadeInLeft showdelay4">
+            <div class="teamblock wow fadeInLeft" data-wow-delay="0.4s">
               <img alt="analytics-icon" src="/assets/img/mhp/bio_munif.png">
 
               <div class="caption">
@@ -141,12 +135,10 @@
                 <p>Pengarah Urusan</p>
               </div>
             </div>
-            <!--/teamblock -->
           </div>
-          <!--/col-sm-6-->
 
           <div class="col-sm-6 col-md-3">
-            <div class="teamblock wow fadeInUp showdelay5">
+            <div class="teamblock wow fadeInUp" data-wow-delay="0.5s">
               <img alt="analytics-icon" src="/assets/img/mhp/bio_amir.png">
 
               <div class="caption">
@@ -154,12 +146,10 @@
                 <p>Eksekutif <em>Artists &amp; Repertoire</em></p>
               </div>
             </div>
-            <!--/teamblock -->
           </div>
-          <!--/col-sm-6-->
 
           <div class="col-sm-6 col-md-3">
-            <div class="teamblock wow fadeInUp showdelay5">
+            <div class="teamblock wow fadeInUp" data-wow-delay="0.5s">
               <img alt="analytics-icon" src="/assets/img/mhp/bio_wan.png">
 
               <div class="caption">
@@ -167,12 +157,10 @@
                 <p>Komposer Residen / Jurutera Studio</p>
               </div>
             </div>
-            <!--/teamblock -->
           </div>
-          <!--/col-sm-6-->
 
           <div class="col-sm-6 col-md-3">
-            <div class="teamblock wow fadeInRight showdelay4">
+            <div class="teamblock wow fadeInRight" data-wow-delay="0.4s">
               <img alt="analytics-icon" src="/assets/img/mhp/bio_taq.png">
 
               <div class="caption">
@@ -180,15 +168,10 @@
                 <p>Pereka Grafik &amp; Fotografer</p>
               </div>
             </div>
-            <!--/teamblock -->
           </div>
-          <!--/col-sm-6-->
         </section>
-        <!--/section -->
       </div>
-      <!--/container -->
     </main>
-    <!--/main -->
 
     <!-- ******************** FOOTER ******************** -->
     <div class="container">
@@ -197,17 +180,8 @@
           <h3>&copy; 2014 MH Pro. Semua Hakcipta Terpelihara.</h3>
         </div>
       </section>
-      <!--/section -->
     </div>
-    <!--/container -->
 
-
-    <!-- <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
-    <script src="//cdnjs.cloudflare.com/ajax/libs/wow/0.1.12/wow.min.js"></script>
-    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
-    <script src="//cdn.jsdelivr.net/jquery.stellar/0.6.2/jquery.stellar.min.js"></script> -->
-    <!-- <script src="/assets/js/nicescroll.js"></script> -->
 
     <script src="/assets/js/main.js"></script>
 
