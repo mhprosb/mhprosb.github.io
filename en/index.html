@@ -5,9 +5,9 @@
     <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>MH Pro</title>
+    <title>MH Pro Sdn. Bhd.</title>
 
-    <meta name="description" content="MH Pro">
+    <meta name="description" content="MH Pro Sdn. Bhd.">
     <meta name="keywords" content="mh, pro, munif, hijjaz, productions, production, music, sound, audio, 7, seven, studio">
     <meta name="author" content="@wansaleh">
 
@@ -16,19 +16,9 @@
     <script>
       paceOptions = { elements: { selectors: ['img'] } };
     </script>
-    <script src="//cdnjs.cloudflare.com/ajax/libs/pace/0.5.5/pace.min.js"></script>
-    <script>
-      Pace.on('done', function(){
-        setTimeout(function() {
-          $('.preloader').addClass('fadeOutUpBig animated').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function(){
-            $(this).removeClass().addClass('.preloader').hide();
-          });
-        }, 700);
-      });
-    </script>
+    <script src="//cdn.jsdelivr.net/pace/0.5.7/pace.min.js"></script>
+    <script src="//cdn.jsdelivr.net/modernizr/2.8.3/modernizr.min.js"></script>
 
-    <link href="//cdn.jsdelivr.net/animatecss/3.2.0/animate.min.css" rel="stylesheet">
-    <link href="//cdn.jsdelivr.net/fontawesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
     <link href="/assets/css/styles.css" rel="stylesheet">
 
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
@@ -43,13 +33,13 @@
     <!-- Preloader -->
     <div class="preloader"></div>
     <!-- Background Pattern -->
-    <div class="bg-pattern bg-pattern-vertical"></div>
+    <div class="bg-pattern bg-pattern-diag"></div>
     <!-- Video BG -->
     <!-- <div class="back-vide" data-vide-bg="/assets/img/mhp/video"></div> -->
 
     <!-- ******************** SMALL TOPNAV ******************** -->
     <header class="small-logo" role="header">
-      <a href="#top" class="logo gototop"><img alt="logo" src="/assets/img/mhp/logo_white.svg" style="width:70px;"></a>
+      <a href="#top" class="logo gototop"><img alt="logo" src="/assets/img/mhp/logo_white.svg"></a>
       <nav>
         <a href="/" class="lang_ms"><i class="fa fa-flag"></i> Malay</a>
         <a href="/en" class="lang_en"><i class="fa fa-flag"></i> English</a>
@@ -59,131 +49,157 @@
     <!-- ******************** MASTHEAD SECTION ******************** -->
     <main class="masthead screen" id="top" role="main" data-scroll-index="0">
       <div class="container">
+        <div class="row">
+          <div class="small-12 columns">
+            <!-- <h2 class="salam">Assalamualaikum Warahmatullah.</h2> -->
+            <div class="salam">
+              <img src="/assets/img/mhp/salam_white.png" alt="">
+            </div>
 
-        <!-- <h2 class="salam">Assalamualaikum Warahmatullah.</h2> -->
-        <div class="salam">
-          <img src="/assets/img/mhp/salam_white.png" alt="">
+            <div class="masthead-logo">
+              <a href="#"><img alt="logo" src="/assets/img/mhp/logo_white.svg"></a>
+            </div>
+
+            <h1>Allah is <strong>The Greatest.</strong><br>Muhammad is <strong>Our Guide.</strong></h1>
+
+            <div class="store breath">
+              <a href="#" class="button alt" data-tooltip aria-haspopup="true" title="Laman ini masih dalam pembinaan. Afwan." onclick="return false;">Kedai Online</a>
+            </div>
+
+            <a class="scrollto" href="#explore">
+              <p>Scroll Down To Explore</p>
+              <p class="scrollto--arrow"><img alt="scroll down arrow" src="/assets/img/scroll_down.png"></p>
+            </a>
+          </div>
         </div>
-
-        <div class="masthead-logo">
-          <a href="#"><img alt="logo" src="/assets/img/mhp/logo_white.svg" style="width:400px;"></a>
-        </div>
-
-        <h1>Allah is <strong>The Greatest.</strong><br>Muhammad is <strong>Our Guide.</strong></h1>
-
-        <a class="scrollto" href="#explore">
-          <p>Scroll Down To Explore</p>
-          <p class="scrollto--arrow"><img alt="scroll down arrow" src="/assets/img/scroll_down.png">
-        </p></a>
-
       </div>
     </main>
 
     <!-- ******************** HERO SECTION ******************** -->
     <main class="hero screen" id="explore" data-scroll-index="1">
       <div class="container">
-        <div class="section-title">
-          <!-- <i class="fa fa-send wow fadeInDown" data-wow-delay="0.2s"></i> -->
+        <div class="row">
+          <div class="small-12 columns">
+            <div class="section-title">
+              <!-- <i class="fa fa-send wow fadeInDown" data-wow-delay="0.2s"></i> -->
 
-          <h2 class="wow flipInX" data-wow-delay="0.3s">Our Passion.</h2>
-          <h4 class="wow fadeInDown" data-wow-delay="0.4s">This is our adventure through the world of Islamic music.<br>We love and we strive to do dakwah via music.<br>We love Zikrullah. We love Selawat.</h4>
+              <h2 class="wow flipInX" data-wow-delay="0.3s">Our Passion</h2>
+              <h4 class="wow fadeInDown" data-wow-delay="0.4s">This is our adventure through the world of Islamic music.<br>We love and we strive to do dakwah via music.<br>We love Zikrullah. We love Selawat.</h4>
+            </div>
+
+            <p class="lyrics wow fadeInRight" data-wow-delay="0.5s">
+              Dalam diri selembut sutera<br>
+              Kau miliki <strong>iman yang teguh</strong><br>
+              Kau nyalakan obor agama dirimu bak lentera<br>
+              dibelengu jahiliah kau tempuh dengan berani<br>
+              Walau pun jasadmu milik tuan<br>
+              Tetapi <strong>hatimu milik Tuhan</strong>
+            </p>
+            <p class="cite wow flipInX" data-wow-delay="0.8s">
+              Munif Ahmad &amp; ITO Lara, &lsquo;04
+            </p>
+          </div>
         </div>
-
-        <p class="lyrics wow fadeInRight" data-wow-delay="0.5s">
-          Dalam diri selembut sutera<br>
-          Kau miliki <strong>iman yang teguh</strong><br>
-          Kau nyalakan obor agama dirimu bak lentera<br>
-          dibelengu jahiliah kau tempuh dengan berani<br>
-          Walau pun jasadmu milik tuan<br>
-          Tetapi <strong>hatimu milik Tuhan</strong>
-        </p>
-        <p class="cite wow flipInX" data-wow-delay="0.8s">
-          Munif Ahmad &amp; ITO Lara, &lsquo;04
-        </p>
       </div>
     </main>
 
     <!-- ******************** MASTERPIECE SECTION ******************** -->
     <main class="masterpiece screen" data-scroll-index="2">
       <div class="container">
-        <div class="section-title">
-          <i class="fa fa-quote-left wow fadeInLeft" data-wow-delay="0.6s"></i>
-          <h1 class="wow bounceInLeft" data-wow-delay="0.3s">We are merely a messenger.<br>Our masterpieces are ultimately <strong>His.</strong></h1>
+        <div class="row">
+          <div class="small-12 columns">
+            <div class="section-title">
+              <i class="fa fa-quote-left wow fadeInLeft" data-wow-delay="0.6s"></i>
+              <h1 class="wow bounceInLeft" data-wow-delay="0.3s">We are merely a messenger.<br>Our masterpieces are ultimately <strong>His.</strong></h1>
+            </div>
+
+            <div class="flex-video widescreen">
+              <iframe width="854" height="510" src="//www.youtube.com/embed/5kYqnYlZ1a8" frameborder="0" allowfullscreen></iframe>
+            </div>
+          </div>
         </div>
-        <!-- <div class="video-munif">
-          <iframe width="854" height="510" src="//www.youtube.com/embed/5kYqnYlZ1a8" frameborder="0" allowfullscreen></iframe>
-        </div> -->
       </div>
     </main>
 
     <!-- ******************** TEAM SECTION ******************** -->
     <main class="team screen" id="team" data-scroll-index="3">
       <div class="container">
-        <div class="section-title">
-          <!-- <i class="fa fa-cogs wow fadeInDown" data-wow-delay="0.2s"></i> -->
+        <div class="row">
+          <div class="small-12 columns">
+            <div class="section-title">
+              <!-- <i class="fa fa-cogs wow fadeInDown" data-wow-delay="0.2s"></i> -->
 
-          <h2 class="wow bounceInLeft" data-wow-delay="0.3s">Our Family.</h2>
-          <h4 class="wow bounceInRight" data-wow-delay="0.5s">We are not just a production company. We are a family.</h4>
+              <h2 class="wow bounceInLeft" data-wow-delay="0.3s">Our Family</h2>
+              <h4 class="wow bounceInRight" data-wow-delay="0.5s">We are not just a production company. We are a family.</h4>
+            </div>
+
+            <section class="row">
+              <div class="small-12 medium-6 large-3 columns">
+                <div class="teamblock wow fadeInLeft" data-wow-delay="0.3s">
+                  <img alt="analytics-icon" src="/assets/img/mhp/bio_munif.png">
+
+                  <div class="caption">
+                    <h3>Munif Ahmad</h3>
+                    <p>Managing Director</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="small-12 medium-6 large-3 columns">
+                <div class="teamblock wow fadeInUp" data-wow-delay="0.4s">
+                  <img alt="analytics-icon" src="/assets/img/mhp/bio_amir.png">
+
+                  <div class="caption">
+                    <h3>Amir Arshad</h3>
+                    <p>Artists &amp; Repertoire Executive</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="small-12 medium-6 large-3 columns">
+                <div class="teamblock wow fadeInUp" data-wow-delay="0.5s">
+                  <img alt="analytics-icon" src="/assets/img/mhp/bio_wan.png">
+
+                  <div class="caption">
+                    <h3>Wan Saleh</h3>
+                    <p>Resident Composer / Studio Engineer</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="small-12 medium-6 large-3 columns">
+                <div class="teamblock wow fadeInRight" data-wow-delay="0.6s">
+                  <img alt="analytics-icon" src="/assets/img/mhp/bio_taq.png">
+
+                  <div class="caption">
+                    <h3>Nurtaqwa Othman</h3>
+                    <p>Graphic Designer &amp; Photographer</p>
+                  </div>
+                </div>
+              </div>
+            </section>
+          </div>
         </div>
-
-        <section class="row">
-          <div class="col-sm-6 col-md-3">
-            <div class="teamblock wow fadeInLeft" data-wow-delay="0.4s">
-              <img alt="analytics-icon" src="/assets/img/mhp/bio_munif.png">
-
-              <div class="caption">
-                <h3>Munif Ahmad</h3>
-                <p>Managing Director</p>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-sm-6 col-md-3">
-            <div class="teamblock wow fadeInUp" data-wow-delay="0.5s">
-              <img alt="analytics-icon" src="/assets/img/mhp/bio_amir.png">
-
-              <div class="caption">
-                <h3>Amir Arshad</h3>
-                <p>Artists &amp; Repertoire Executive</p>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-sm-6 col-md-3">
-            <div class="teamblock wow fadeInUp" data-wow-delay="0.5s">
-              <img alt="analytics-icon" src="/assets/img/mhp/bio_wan.png">
-
-              <div class="caption">
-                <h3>Wan Saleh</h3>
-                <p>Resident Composer / Studio Engineer</p>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-sm-6 col-md-3">
-            <div class="teamblock wow fadeInRight" data-wow-delay="0.4s">
-              <img alt="analytics-icon" src="/assets/img/mhp/bio_taq.png">
-
-              <div class="caption">
-                <h3>Nurtaqwa Othman</h3>
-                <p>Graphic Designer &amp; Photographer</p>
-              </div>
-            </div>
-          </div>
-        </section>
       </div>
     </main>
 
     <!-- ******************** FOOTER ******************** -->
     <div class="container">
       <section class="row breath">
-        <div class="col-md-12 footerlinks">
-          <h3>&copy; 2014 MH Pro. All Rights Reserved.</h3>
+        <div class="small-12 columns footerlinks">
+          <h3>&copy; 2014 MH Pro Sdn. Bhd.. All Rights Reserved.</h3>
         </div>
       </section>
     </div>
 
 
+    <script src="//cdn.jsdelivr.net/jquery/2.1.1/jquery.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.5/waypoints.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/wow/1.0.2/wow.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery-backstretch/2.0.4/jquery.backstretch.min.js"></script>
+    <script src="//cdn.jsdelivr.net/foundation/5.4.4/js/foundation/foundation.js"></script>
+    <script src="//cdn.jsdelivr.net/foundation/5.4.4/js/foundation/foundation.tooltip.js"></script>
     <script src="/assets/js/main.js"></script>
 
   </body>
