@@ -8,4 +8,12 @@
     <loc>http://mhpro.me/index.html</loc>
     <priority>0.7</priority>
   </url>
+  <url>
+    <loc>http://mhpro.me/en/index2.html.slim</loc>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>http://mhpro.me/index2.html.slim</loc>
+    <priority>0.7</priority>
+  </url>
 </urlset>
